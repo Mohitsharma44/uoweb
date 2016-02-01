@@ -21,7 +21,7 @@ AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
 # Theme
-THEME = "theme/html5-dopetrope/"
+THEME = "theme/html5/"
 
 # Blogroll
 LINKS = (('What is Urban Observatory', 'http://cusp.nyu.edu/press-release/nyu-cusp-unveils-first-kind-urban-observatory-downtown-brooklyn/'),
