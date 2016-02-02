@@ -47,38 +47,45 @@
 			<div id="main-wrapper">
 				<div class="container">
 <div class="row">
-<div class="12u">
-    <section>
-            <div class="row">
-                <div class="4u">
-                    <section class="box">
-                        <header>
-                            <h3>Live Feed</h3>
-                            <span class="byline">2016-02-01 13:50:00-05:00</span>
-                        </header>
-                        <p>Live feed of images being captured by a standard RGB and a thermographic camera.</p>
-                        <footer class="actions">
-                            <a href="/uo-live-feed.html" class="button button-icon button-icon-1">Continue Reading</a>
-                        </footer>
-                    </section>
-                </div>
-                <div class="4u">
-                    <section class="box">
-                        <header>
-                            <h3>Static Images</h3>
-                            <span class="byline">2016-02-01 13:50:00-05:00</span>
-                        </header>
-                        <p>Some static images taken by the imaging sensors at NYU CUSP</p>
-                        <footer class="actions">
-                            <a href="/uo-static-images.html" class="button button-icon button-icon-1">Continue Reading</a>
-                        </footer>
-                    </section>
-                </div>
-    </section><!-- /#content -->
-            <p class="paginator">
-                Page 1 / 1
-            </p>
-</div>
+	<div class="12u">
+			<section>
+				<div>
+					<div class="row">
+						<div class="12u skel-cell-mainContent">
+							<!-- Content -->
+								<article class="box is-post">
+									<div class="post-infos">
+										<ul class="tags">
+											<li><a class="button" href="category/images-uo.html">Images, uo</a></li>
+												<li><a class="button button-alt" href="tag/livefeed.html">Livefeed</a></li>
+
+										</ul>
+									</div>
+
+									<div class="pennant pennant-alt date">2016-02-01</div>
+									<h2>Live Feed</h2>
+									<!-- Create Iframe and show LiveFeed only if article is tagged as liveFeed-->
+									<iframe id="live_vis" name="live_vis" src="./images/test.jpg" width="400" height="300">
+									</iframe>
+									<iframe id="live_ir" name="live_ir" src="./images/test1.jpg" width="400" height="300">
+									</iframe>
+									<script>
+									        window.setInterval("reloadIFrame();", 1000);
+										//var visFrame=document.querySelector('iframe');
+										var visFrame=document.getElementById('live_vis')
+										var irFrame=document.getElementById('live_ir')
+										function reloadIFrame() {
+										visFrame.contentWindow.location.reload(true)
+										irFrame.contentWindow.location.reload(true)
+										}
+									</script>
+									<!-- If not liveFeed then just display the content of article-->
+								</article>
+						</div>
+					</div>
+				</div>
+			</section>
+	</div>
 </div>
 
 				</div>
