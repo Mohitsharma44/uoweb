@@ -2,6 +2,9 @@
 	Dopetrope 2.0 by HTML5 UP
 	html5up.net | @n33co
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+
+        Modified by: Mohit Sharma
+        NYU CUSP 2016
 */
 
 /*********************************************************************************/
@@ -22,7 +25,7 @@
 		font-family: 'Source Sans Pro';
 		font-weight: 300;
 		background: #252122;
-		background-image: url('images/bg02.png');
+		/* background-image: url('images/bg02.png'); */
 		color: #5d5d5d;
 	}
 
@@ -30,6 +33,25 @@
 	{
 		color: #252122;
 		font-weight: 700;
+	}
+
+	img
+	{
+	    width: 100%;
+	}
+
+	.underline
+	{
+	        display: inline-block;
+	        border-style: solid;
+		border-width: 0px;
+		padding-bottom: 30px;
+		padding-right: 10px;
+		text-align: center;
+		-webkit-border-image:
+		-webkit-linear-gradient(left, rgba(245, 130, 51, 1) 1%, rgba(0, 0, 0, 1) 50%,
+					rgba(125, 195, 92, 1) 100%) 0 0 100% 0/0 0 1px 0 stretch;
+		
 	}
 	
 	h1, h2, h3, h4, h5, h6
@@ -147,7 +169,7 @@
 			cursor: pointer;
 			border: 0;
 			border-radius: 5px;
-			background: #d52349;
+			background: #F58233;
 			color: #fff !important;
 			font-weight: 700;
 			outline: 0;
@@ -160,27 +182,27 @@
 
 			.button:hover
 			{
-				background: #e53359;
+				background: #7DC35C;
 			}
 			
 			.button:active
 			{
-				background: #c51349;
+			        background: #F58233;
 			}
 		
 			.button-alt
 			{
-				background: #252122;
+				background: #F58233;
 			}
 
 				.button-alt:hover
 				{
-					background: #353132;
+				        background: #7DC35C;
 				}
 				
 				.button-alt:active
 				{
-					background: #151112;
+				        background: #81806F;
 				}
 		
 			.button-icon
@@ -345,7 +367,8 @@
 
 				ul.contact li p
 				{
-					margin: 0;
+				        margin: 0;
+				        font-size: 1.1em;
 				}
 			
 			ul.contact li:first-child
@@ -376,7 +399,7 @@
 				position: absolute;
 				left: 0;
 				top: 1.3em;
-				background-color: #d52349;
+				background-color: #F58233;
 				height: 3.5em;
 				text-align: center;
 				color: #fff;
@@ -392,7 +415,7 @@
 					position: absolute;
 					bottom: 0;
 					right: -1.2em;
-					border-left: solid 1.25em #d52349;
+					border-left: solid 1.25em #F58233;
 					border-top: solid 1.8em transparent;
 					border-bottom: solid 1.8em transparent;
 				}
@@ -453,7 +476,7 @@
 		{
 			overflow: hidden;
 		}
-
+		
 			ul.social li
 			{
 				display: block;
@@ -491,7 +514,7 @@
 		{
 			position: relative;
 			display: inline-block;
-			background-color: #d52349;
+			background-color: #F58233;
 			width: 9em;
 			padding: 1.5em 0 0.5em 0;
 			border-top-left-radius: 5px;
@@ -504,7 +527,7 @@
 				position: absolute;
 				bottom: -1.98em;
 				left: 0;
-				border-top: solid 2em #d52349;
+				border-top: solid 2em #F58233;
 				border-left: solid 4.5em transparent;
 				border-right: solid 4.5em transparent;
 			}
@@ -517,12 +540,12 @@
 
 			.pennant-alt
 			{
-				background-color: #252122;
+				background-color: #F58233;
 			}
 			
 				.pennant-alt:after
 				{
-					border-top-color: #252122;
+					border-top-color: #F58233;
 				}
 
 			.pennant-alt2
@@ -546,7 +569,7 @@
 		#banner a
 		{
 			text-decoration: none;
-			outline: 0;
+			outline: ;
 		}
 
 		#banner header
@@ -581,8 +604,9 @@
 	#header-wrapper
 	{
 		position: relative;
-		background: #ffffff;
-		border-bottom: solid 1px #ccc;
+		background: #f7f7f7;
+		//border-image:-webkit-linear-gradient(left, #F58233, #81806F 33%, #0082C6 66%, #7DC35C) 1%;
+		//border-bottom: solid 5px;
 	}
 
 		#header-wrapper:before
@@ -592,10 +616,10 @@
 			top: 0;
 			left: 0;
 			width: 100%;
-			background: url('images/bg02.png');
+			/*background: url('images/bg02.png');*/
 			z-index: 0;
 			opacity: 0.5;
-			box-shadow: inset 0px -60px 40px 0px #fff;
+			/*box-shadow: inset 0px -60px 40px 0px #fff;*/
 		}
 		
 		#header-wrapper:after
@@ -605,7 +629,7 @@
 			top: 0;
 			left: 0;
 			width: 100%;
-			background: url('images/bg01.png');
+			/*background: url('images/bg01.png');*/
 			background-size: 100% 100%;
 			z-index: 0;
 			opacity: 0.25;
@@ -620,7 +644,10 @@
 	#main-wrapper
 	{
 		position: relative;
-		background: #f7f7f7 url('images/bg02.png');
+		background: #f7f7f7 url('images/cusp-bg.png');
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: bottom;
 	}
 
 		#main-wrapper:before
@@ -723,7 +750,8 @@
 
 	#copyright
 	{	
-		text-align: center;
+	        text-align: center;
+		font-size: 1.1em;
 	}
 	
 		#copyright .links
