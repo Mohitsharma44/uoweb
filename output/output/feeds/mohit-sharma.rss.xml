@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>A Pelican Blog</title><link>/</link><description></description><atom:link href="/feeds/mohit-sharma.rss.xml" rel="self"></atom:link><lastBuildDate>Fri, 01 Jan 2016 13:50:00 +0000</lastBuildDate><item><title>TimeLapse Videos</title><link>/timelapse-videos.html</link><description>&lt;video width="560" height="340" controls&gt;
+  &lt;source src="videos/manhattan_visTL720.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'&gt;
+&lt;/video&gt;
+
+&lt;p&gt;&lt;/br&gt;
+&lt;!--
+&lt;video width="560" height="340" controls&gt;
+  &lt;source src="videos/brooklyn_irTL.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'&gt;
+&lt;/video&gt;
+--&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Mohit Sharma</dc:creator><pubDate>Fri, 01 Jan 2016 13:50:00 +0000</pubDate><guid>tag:,2016-02-01:timelapse-videos.html</guid><category>timelapse</category></item><item><title>Live Feed</title><link>/uo-live-feed.html</link><description></description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Mohit Sharma</dc:creator><pubDate>Fri, 01 Jan 2016 13:50:00 +0000</pubDate><guid>tag:,2016-02-01:uo-live-feed.html</guid><category>liveFeed</category></item><item><title>Static Images</title><link>/uo-static-images.html</link><description>&lt;p&gt;&lt;img alt="test" src="/images/cusp-logo.png" /&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Mohit Sharma</dc:creator><pubDate>Fri, 01 Jan 2016 13:50:00 +0000</pubDate><guid>tag:,2016-02-01:uo-static-images.html</guid><category>static</category></item></channel></rss>

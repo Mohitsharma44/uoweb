@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>A Pelican Blog</title><link href="/" rel="alternate"></link><link href="/feeds/all-en.atom.xml" rel="self"></link><id>/</id><updated>2016-01-01T13:50:00+00:00</updated><entry><title>TimeLapse Videos</title><link href="/timelapse-videos.html" rel="alternate"></link><updated>2016-01-01T13:50:00+00:00</updated><author><name>Mohit Sharma</name></author><id>tag:,2016-02-01:timelapse-videos.html</id><summary type="html">&lt;video width="560" height="340" controls&gt;
+  &lt;source src="videos/manhattan_visTL720.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'&gt;
+&lt;/video&gt;
+
+&lt;p&gt;&lt;/br&gt;
+&lt;!--
+&lt;video width="560" height="340" controls&gt;
+  &lt;source src="videos/brooklyn_irTL.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'&gt;
+&lt;/video&gt;
+--&gt;&lt;/p&gt;</summary><category term="timelapse"></category></entry><entry><title>Live Feed</title><link href="/uo-live-feed.html" rel="alternate"></link><updated>2016-01-01T13:50:00+00:00</updated><author><name>Mohit Sharma</name></author><id>tag:,2016-02-01:uo-live-feed.html</id><summary type="html"></summary><category term="liveFeed"></category></entry><entry><title>Static Images</title><link href="/uo-static-images.html" rel="alternate"></link><updated>2016-01-01T13:50:00+00:00</updated><author><name>Mohit Sharma</name></author><id>tag:,2016-02-01:uo-static-images.html</id><summary type="html">&lt;p&gt;&lt;img alt="test" src="/images/cusp-logo.png" /&gt;&lt;/p&gt;</summary><category term="static"></category></entry></feed>

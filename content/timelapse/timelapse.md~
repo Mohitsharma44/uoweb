@@ -1,0 +1,23 @@
+Title: TimeLapse Videos
+Date: 2016-02-01 13:50
+Modified: 2016-01-01 13:50
+Category: images
+Tags: timelapse
+Slug: timelapse-videos
+Authors: Mohit Sharma
+Summary: Some Time lapse videos taken by cameras at UO
+
+<p></br></p>
+
+<video width="640" height="480" controls loop muted preload="metadata">
+  <source src="videos/manhattan_visTL720.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+</video>
+
+##View of Manhattan from 1 MTC**
+
+
+<video width="640" height="480" controls loop muted preload="metadata">
+  <source src="videos/brooklyn_irTL.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+</video>
+
+##View of Downtown Brooklyn from 1 MTC**

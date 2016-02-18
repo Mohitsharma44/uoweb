@@ -65,12 +65,15 @@
 									<div class="pennant pennant-alt date">2016-02-01</div>
 									<h2>Live Feed</h2>
 									<!-- Create Iframe and show LiveFeed only if article is tagged as liveFeed-->
-									<iframe id="live_vis" name="live_vis" src="./images/test.jpg" width="400" height="300">
+									<p></br></p>
+									<h3> Live feed from RGB camera  </h3>
+									<iframe id="live_vis" name="live_vis" src="./images/vis.jpg" width="640" height="480">
 									</iframe>
-									<iframe id="live_ir" name="live_ir" src="./images/test1.jpg" width="400" height="300">
+									<h3> Live feed from Thermographic camera  </h3>
+									<iframe id="live_ir" name="live_ir" src="./images/ir.jpg" width="640" height="480">
 									</iframe>
 									<script>
-									        window.setInterval("reloadIFrame();", 1000);
+									        window.setInterval("reloadIFrame();", 60000);
 										//var visFrame=document.querySelector('iframe');
 										var visFrame=document.getElementById('live_vis')
 										var irFrame=document.getElementById('live_ir')
@@ -103,14 +106,19 @@
 									</header>
 									<ul class="dates">
 										<li>
-											<span class="date">Feb <strong>01</strong></span>
-											<h3><a href="uo-live-feed.html">Live Feed</a></h3>
-											<p><p>Live feed of images being captured by a standard RGB and a thermographic camera.</p></p>
+											<span class="date">Feb <strong>16</strong></span>
+											<h3><a href="timelapse-videos.html">TimeLapse&nbsp;Videos</a></h3>
+											<p><p>Some Time lapse videos taken by cameras at <span class="caps">UO</span></p></p>
 										</li>
 										<li>
 											<span class="date">Feb <strong>01</strong></span>
-											<h3><a href="uo-static-images.html">Static Images</a></h3>
-											<p><p>Some static images taken by the imaging sensors at NYU CUSP</p></p>
+											<h3><a href="uo-live-feed.html">Live Feed</a></h3>
+											<p><p>Live feed of images being captured by a standard <span class="caps">RGB</span> and a thermographic&nbsp;camera.</p></p>
+										</li>
+										<li>
+											<span class="date">Feb <strong>01</strong></span>
+											<h3><a href="uo-static-images.html">Static&nbsp;Images</a></h3>
+											<p><p>Some static images taken by the imaging sensors at <span class="caps">NYU</span> <span class="caps">CUSP</span></p></p>
 										</li>
 									</ul>
 								</section>

@@ -35,11 +35,6 @@
 		font-weight: 700;
 	}
 
-	img
-	{
-	    width: 100%;
-	}
-
 	.underline
 	{
 	        display: inline-block;
@@ -51,8 +46,11 @@
 		-webkit-border-image:
 		-webkit-linear-gradient(left, rgba(245, 130, 51, 1) 1%, rgba(0, 0, 0, 1) 50%,
 					rgba(125, 195, 92, 1) 100%) 0 0 100% 0/0 0 1px 0 stretch;
-		
+		-moz-border-image:
+		-moz-linear-gradient(left, rgba(245, 130, 51, 1) 1%, rgba(0, 0, 0, 1) 50%,
+				        rgba(125, 195, 92, 1) 100%) 0 0 100% 0/0 0 1px 0 stretch;
 	}
+		
 	
 	h1, h2, h3, h4, h5, h6
 	{

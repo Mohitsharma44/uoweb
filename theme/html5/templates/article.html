@@ -28,12 +28,15 @@
 									{% for tags in article.tags %}
 									<!-- Create Iframe and show LiveFeed only if article is tagged as liveFeed-->
 									{% if tags.name == "liveFeed" %}
-									<iframe id="live_vis" name="live_vis" src="./images/test.jpg" width="400" height="300">
+									<p></br></p>
+									<h3> Live feed from RGB camera  </h3>
+									<iframe id="live_vis" name="live_vis" src="./images/vis.jpg" width="640" height="480">
 									</iframe>
-									<iframe id="live_ir" name="live_ir" src="./images/test1.jpg" width="400" height="300">
+									<h3> Live feed from Thermographic camera  </h3>
+									<iframe id="live_ir" name="live_ir" src="./images/ir.jpg" width="640" height="480">
 									</iframe>
 									<script>
-									        window.setInterval("reloadIFrame();", 1000);
+									        window.setInterval("reloadIFrame();", 60000);
 										//var visFrame=document.querySelector('iframe');
 										var visFrame=document.getElementById('live_vis')
 										var irFrame=document.getElementById('live_ir')
