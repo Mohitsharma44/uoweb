@@ -70,7 +70,12 @@
 									<iframe id="live_vis" name="live_vis" src="./images/vis.jpg" width="640" height="480">
 									</iframe>
 									<h3> Live feed from Thermographic camera  </h3>
-									<iframe id="live_ir" name="live_ir" src="./images/ir.jpg" width="640" height="480">
+									<hr>
+									Camera status : <span id="message"></span>
+									<hr>
+									<img id="liveIRImg" width="640" height="480"></img>
+									
+									<!-- <iframe id="live_ir" name="live_ir" src="./images/ir.jpg" width="640" height="480">
 									</iframe>
 									<script>
 									        window.setInterval("reloadIFrame();", 60000);
@@ -82,6 +87,7 @@
 										irFrame.contentWindow.location.reload(true)
 										}
 									</script>
+									-- >
 									<!-- If not liveFeed then just display the content of article-->
 								</article>
 						</div>
@@ -205,6 +211,9 @@
 		<script src="/theme/js/config.js"></script>
 		<script src="/theme/js/skel.min.js"></script>
 		<script src="/theme/js/skel-panels.min.js"></script>
+		<script src="/theme/js/client.js"></script>
+		
+		<link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
 		<!--[if lte IE 8]><script src="js/html5shiv.js"></script><link rel="stylesheet" href="/theme/css/ie8.css" /><![endif]-->
 	</body>
 </html>

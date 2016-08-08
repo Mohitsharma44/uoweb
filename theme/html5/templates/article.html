@@ -33,7 +33,12 @@
 									<iframe id="live_vis" name="live_vis" src="./images/vis.jpg" width="640" height="480">
 									</iframe>
 									<h3> Live feed from Thermographic camera  </h3>
-									<iframe id="live_ir" name="live_ir" src="./images/ir.jpg" width="640" height="480">
+									<hr>
+									Camera status : <span id="message"></span>
+									<hr>
+									<img id="liveIRImg" width="640" height="480"></img>
+									
+									<!-- <iframe id="live_ir" name="live_ir" src="./images/ir.jpg" width="640" height="480">
 									</iframe>
 									<script>
 									        window.setInterval("reloadIFrame();", 60000);
@@ -45,6 +50,7 @@
 										irFrame.contentWindow.location.reload(true)
 										}
 									</script>
+									-- >
 									<!-- If not liveFeed then just display the content of article-->
 									{% else %}
 									{{article.content}}
