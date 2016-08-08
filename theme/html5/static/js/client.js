@@ -6,7 +6,7 @@
 var img = document.getElementById("liveIRImg");
 var arrayBuffer;
 
-var ws = new WebSocket("ws://localhost:8888/ws");
+var ws = new WebSocket("ws://uowebsite.cloudapp.net/ws");
 var $message = $("#message");
 
 ws.binaryType = 'arraybuffer';
