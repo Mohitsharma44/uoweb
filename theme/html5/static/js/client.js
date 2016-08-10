@@ -20,9 +20,9 @@ ws.onopen = function(){
     img.style.height = '60px';
     img.style.width = '60px';
     var message = "Connecting to the camera can take upto 15 seconds."
-    message = message.fontsize("10").fontcolor("#FFFFFF").bold();
-    message = message.style.textAlign="center";
+    message = message.fontsize("4").fontcolor("#000000").bold();
     optional_text.innerHTML = message;
+    optional_text.style.textAlign="center";
 };
 
 ws.onmessage = function(evt){
