@@ -19,7 +19,10 @@ ws.onopen = function(){
     img.src = "images/connecting.svg"
     img.style.height = '60px';
     img.style.width = '60px';
-    optional_text.innerHTML = "Connecting to the camera can take upto 15 seconds."
+    var message = "Connecting to the camera can take upto 15 seconds."
+    message = message.fontsize("10").fontcolor("#FFFFFF").bold();
+    message = message.style.textAlign="center";
+    optional_text.innerHTML = message;
 };
 
 ws.onmessage = function(evt){
@@ -30,6 +33,7 @@ ws.onmessage = function(evt){
     img.src = "data:image/jpeg;base64," + encode(new Uint8Array(arrayBuffer));
     img.style.height = '700px';
     img.style.width = '900px';
+    optional_text.innerHTML = "";
 };
 
 function encode (input) {
