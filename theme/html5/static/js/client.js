@@ -12,13 +12,16 @@ var $message = $("#message");
 ws.binaryType = 'arraybuffer';
 
 ws.onopen = function(){
-    $message.attr("class", 'label label-success');
-    $message.text("Live");
+    $message.attr("class", 'label label-info');
+    $message.text("Connecting");
     console.log("connection was established");
+    img.src = "images/connecting.svg"
 };
 
 ws.onmessage = function(evt){
     arrayBuffer = evt.data;
+    $message.attr("class", 'label label-success')
+    $message.text("Live")
     img.src = "data:image/jpeg;base64," + encode(new Uint8Array(arrayBuffer));
 };
 
