@@ -20,11 +20,11 @@ ws.onopen = function(){
     img.style.height = '60px';
     img.style.width = '60px';
     img.style.margin = "0 auto";
-    var message = "Connecting to the camera can take upto 15 seconds."
+    var message = "Connecting to the Live Feed can take upto 20 seconds."
     message = message.fontsize("4").fontcolor("#000000").bold();
     optional_text.innerHTML = message;
     optional_text.style.textAlign="center";
-    setTimeout(ws.onerror, 15000);
+    setTimeout(ws.onerror, 20000);
 };
 
 ws.onmessage = function(evt){
@@ -72,7 +72,7 @@ ws.onclose = function(ev){
 ws.onerror = function(ev){
     $message.attr("class", 'label label-warning');
     $message.text('Error');
-    var message = "Connecting to the camera can take upto 15 seconds."
+    var message = "Could not connect to the Live Feed. <br/> Contact mohit.sharma@nyu.edu"
     message = message.fontsize("4").fontcolor("#000000").bold();
     optional_text.innerHTML = message;
     optional_text.style.textAlign="center";
