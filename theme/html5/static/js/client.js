@@ -19,10 +19,12 @@ ws.onopen = function(){
     img.src = "images/connecting.svg"
     img.style.height = '60px';
     img.style.width = '60px';
+    img.style.margin = "0 auto";
     var message = "Connecting to the camera can take upto 15 seconds."
     message = message.fontsize("4").fontcolor("#000000").bold();
     optional_text.innerHTML = message;
     optional_text.style.textAlign="center";
+    setTimeout(ws.onerror, 15000);
 };
 
 ws.onmessage = function(evt){
@@ -69,5 +71,9 @@ ws.onclose = function(ev){
 };
 ws.onerror = function(ev){
     $message.attr("class", 'label label-warning');
-    $message.text('error occurred');
+    $message.text('Error');
+    var message = "Connecting to the camera can take upto 15 seconds."
+    message = message.fontsize("4").fontcolor("#000000").bold();
+    optional_text.innerHTML = message;
+    optional_text.style.textAlign="center";
 };
