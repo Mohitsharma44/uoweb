@@ -25,9 +25,14 @@ ws.onopen = function(){
     message = message.fontsize("4").fontcolor("#000000").bold();
     optional_text.innerHTML = message;
     optional_text.style.textAlign="center";
-    setTimeout(function(){
+    setTimeout( function(){
 	if (!message_received_once){
-	    ws.onerror;
+	    $message.attr("class", 'label label-warning');
+	    $message.text('Error');
+	    var message = "Could not connect to the Live Feed. <br/> Contact mohit.sharma@nyu.edu"
+	    message = message.fontsize("4").fontcolor("#000000").bold();
+	    optional_text.innerHTML = message;
+	    optional_text.style.textAlign="center";
 	}
     }, 20000);
 };
