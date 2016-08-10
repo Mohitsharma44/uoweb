@@ -28,6 +28,7 @@ ws.onopen = function(){
     setTimeout(function(){
 	if (!message_received_once){
 	    ws.onerror;
+	}
     }, 20000);
 };
 
