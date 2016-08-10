@@ -4,7 +4,8 @@
 // http://stackoverflow.com/questions/22554313/send-captured-images-from-python-server-to-javascript-client
 
 var img = document.getElementById("liveIRImg");
-var optional_text = document.getElementById("optional_text")
+var optional_text = document.getElementById("optional_text");
+var message_received_once = false;
 var arrayBuffer;
 
 var ws = new WebSocket("ws://uowebsite.cloudapp.net/ws");
@@ -24,11 +25,15 @@ ws.onopen = function(){
     message = message.fontsize("4").fontcolor("#000000").bold();
     optional_text.innerHTML = message;
     optional_text.style.textAlign="center";
-    setTimeout(ws.onerror, 20000);
+    setTimeout(function(){
+	if (!message_received_once){
+	    ws.onerror;
+    }, 20000);
 };
 
 ws.onmessage = function(evt){
     arrayBuffer = evt.data;
+    message_received_once = true;
     $message.attr("class", 'label label-success')
     $message.text("Live")
     img.src = "data:image/jpeg;base64," + encode(new Uint8Array(arrayBuffer));
